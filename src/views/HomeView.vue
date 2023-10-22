@@ -5,6 +5,8 @@ import ServiceComponent from '../components/home/ServiceComponent.vue'
 import AdComponent from '../components/home/AdComponent.vue'
 import MeetTeam from '../components/home/MeetTeam.vue'
 import BlogComponent from '../components/home/BlogComponent.vue'
+import ContactUs from '../components/home/ContactUs.vue'
+import FooterComponent from '../components/home/FooterComponent.vue'
 </script>
 
 <template>
@@ -15,6 +17,8 @@ import BlogComponent from '../components/home/BlogComponent.vue'
     <AdComponent />
     <MeetTeam />
     <BlogComponent />
+    <ContactUs />
+    <FooterComponent />
   </main>
 </template>
 
