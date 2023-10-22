@@ -4,6 +4,7 @@ import AboutHome from '../components/home/AboutHome.vue'
 import ServiceComponent from '../components/home/ServiceComponent.vue'
 import AdComponent from '../components/home/AdComponent.vue'
 import MeetTeam from '../components/home/MeetTeam.vue'
+import BlogComponent from '../components/home/BlogComponent.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import MeetTeam from '../components/home/MeetTeam.vue'
     <ServiceComponent :heading="head" :action="link"/>
     <AdComponent />
     <MeetTeam />
+    <BlogComponent />
   </main>
 </template>
 
