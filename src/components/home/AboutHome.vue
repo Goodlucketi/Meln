@@ -1,5 +1,5 @@
 <template>
-  <div class="py-16 my-16 mx-auto">
+  <div class="pt-16 mt-16 mx-auto">
     <div class="w-11/12 mx-auto">
       <div class="flex justify-center gap-10 py-10 lg:flex-col">
         <div class="w-5/12 lg:w-full">
