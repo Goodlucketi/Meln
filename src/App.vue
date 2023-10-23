@@ -9,7 +9,7 @@ import HomeComponent from './components/home/HeroComponent.vue'
       <div class="nav-content w-11/12 mx-auto flex justify-between items-center">
         <div class="logo w-3/12">
           <router-link to="/">
-            <img src="./assets/assets/images/Logo_Primary_white.png" alt="Logo" class="w-3/6">
+            <img src="./assets/files/images/Logo_Primary_white.png" alt="Logo" class="w-3/6">
           </router-link>
         </div>
         <div :id="openNav " class="link flex items-center gap-5 justify-between w-10/12 text-white" :style="{ height: nav }">
