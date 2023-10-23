@@ -3,7 +3,7 @@
     <div class="w-11/12 mx-auto">
       <div class="flex justify-center gap-10 py-10 lg:flex-col">
         <div class="w-5/12 lg:w-full">
-          <img src="../../assets/assets/images/Vector.png" alt="Learn Web Image" class="w-full"/>
+          <img src="../../assets/files/images/Vector.png" alt="Learn Web Image" class="w-full"/>
         </div>
         <div class="w-5/12 lg:w-full lg:text-center">
           <h3 class="text-3xl font-bold mt-16 p-1">Why Choose Us</h3>

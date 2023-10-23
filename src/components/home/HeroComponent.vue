@@ -20,7 +20,7 @@
       <div class="features flex gap-2 justify-between items-center absolute -bottom-32 text-sm lg:flex-col l:relative lg:top-full md:-bottom-96">
         <div class="flex items-center p-3 rounded-xl text-left gap-3 bg-slate-800 text-white lg:flex-col lg:text-center ideate">
           <div class="icon rounded-full bg-white p-2 w-3/12 md:w-1/12">
-            <img src="../../assets/assets/icons/python.svg" alt="ideate-icon" class="mx-auto">
+            <img src="../../assets/files/icons/python.svg" alt="ideate-icon" class="mx-auto">
           </div>
           <div class="text">
             <h3 class="text-xl bold my-1 mx-5">Ideate</h3>
@@ -29,7 +29,7 @@
         </div>
         <div class="flex items-center p-3 rounded-xl text-left gap-3 bg-blue-800 text-white lg:flex-col lg:text-center collaborate">
           <div class="icon rounded-full bg-white p-2 w-3/12 md:w-1/12">
-            <img src="../../assets/assets/icons/colorfilter.svg" alt="collaborate-icon" class="mx-auto">
+            <img src="../../assets/files/icons/colorfilter.svg" alt="collaborate-icon" class="mx-auto">
           </div>
           <div class="text">
             <h3 class="text-xl bold my-1 mx-5">Collaborate</h3>
@@ -38,7 +38,7 @@
         </div>
         <div class="flex items-center p-4 rounded-xl text-left gap-3 bg-cyan-500 text-black lg:flex-col lg:text-center build">
           <div class="icon rounded-full bg-white p-2 w-3/12 md:w-1/12">
-            <img src="../../assets/assets/icons/building3.svg" alt="build-icon" class="mx-auto">
+            <img src="../../assets/files/icons/building3.svg" alt="build-icon" class="mx-auto">
           </div>
           <div class="text">
             <h3 class="text-xl bold my-1 mx-5">Build</h3>
@@ -58,7 +58,7 @@ export default {
 
 <style scoped>
 .hero {
-  background: url('../../assets/assets/images/hero-background.png') no-repeat;
+  background: url('../../assets/files/images/hero-background.png') no-repeat;
   background-size: cover;
 }
 

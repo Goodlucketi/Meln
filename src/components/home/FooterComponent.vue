@@ -2,7 +2,7 @@
   <div class="footer text-white text-sm pt-12 pb-2">
     <div class="footerContainer w-11/12 mx-auto py-6">
       <div class="logo">
-        <img src="../../assets/assets/images/Logo_Primary_white.png" alt="Company Logo">
+        <img src="../../assets/files/images/Logo_Primary_white.png" alt="Company Logo">
       </div>
       <div class="company-info my-4 flex justify-between lg:flex-col">
         <div class="platforms">
@@ -61,6 +61,6 @@ export default {
 
 <style>
     .footer {
-        background: url("../../assets/assets/images/footer.png");
+        background: url("../../assets/files/images/footer.png");
     }
 </style>
