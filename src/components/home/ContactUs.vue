@@ -2,7 +2,7 @@
   <div class="contact">
     <div class="contact-container w-11/12 my-5 mx-auto flex justify-between items-center gap-10 lg:flex-col">
         <div class="image w-5/12 lg:w-full">
-            <img src="../../assets/files/images/Pexels Photo by Yan Krukau.png" alt="Contact Image" class="contact-img bg-top object-cover lg:w-full">
+            <img src="../../assets/files/images/contact_img.png" alt="Contact Image" class="contact-img bg-top object-cover lg:w-full">
         </div>
         <div class="contact-form-container w-6/12 p-4 lg:w-full">
             <h3 class="form-title text-4xl sm:text-3xl">Get in Touch</h3>

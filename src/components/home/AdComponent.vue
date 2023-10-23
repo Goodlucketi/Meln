@@ -9,7 +9,7 @@
         <router-link class="btn bg-blue-700 text-white px-5 py-2 absolute -bottom-16 rounded-xl text-center lg:w-full" to="/register">Get Started Now</router-link>
       </div>
       <div class="adImage w-6/12 relative lg:w-full">
-        <img src="../../assets/files/images/digital-service2 1.png" alt="Learn Web Image" />
+        <img src="../../assets/files/images/digital-service2.png" alt="Learn Web Image" />
       </div>
     </div>
   </div>
