@@ -4,7 +4,7 @@
         <h3 class="blog-title text-4xl text-center font-bold p-4 md:text-3xl">Latest from Our Blog</h3>
         <div class="blog-posts flex justify-between items-center gap-10 lg:flex-col">
             <div class="post p-4">
-                <img src="../../assets/files/images/Rectangle 124.png" alt="blog-image" class="blog-img shadow-xl mb-8">
+                <img src="../../assets/files/images/Rectangle124.png" alt="blog-image" class="blog-img shadow-xl mb-8">
                 <div class="blog-content">
                     <p class="my-2 auto text-sm">June 2023</p>
                     <h4 class="blog-post-title my-2 auto text-blue-700 text-base">
@@ -18,7 +18,7 @@
             </div>
 
             <div class="post p-4">
-                <img src="../../assets/files/images/Rectangle 124 (1).png" alt="blog-image" class="blog-img shadow-xl mb-8">
+                <img src="../../assets/files/images/Rectangle122.png" alt="blog-image" class="blog-img shadow-xl mb-8">
                 <div class="blog-content">
                     <p class="my-2 auto text-sm">June 2023</p>
                     <h4 class="blog-post-title my-2 auto text-blue-700 text-base">
@@ -32,7 +32,7 @@
             </div>
 
             <div class="post p-4">
-                <img src="../../assets/files/images/Rectangle 124 (2).png" alt="blog-image" class="blog-img shadow-xl mb-8">
+                <img src="../../assets/files/images/Rectangle121.png" alt="blog-image" class="blog-img shadow-xl mb-8">
                 <div class="blog-content">
                     <p class="my-2 auto text-sm">June 2023</p>
                     <h4 class="blog-post-title my-2 auto text-blue-700 text-base">
