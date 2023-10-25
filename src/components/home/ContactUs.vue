@@ -29,8 +29,8 @@
     </div>
     <div class="contact-team bg-slate-100 p-2 relative">
         <div class="contact-team-container flex justify-around items-center w-11/12 bg-white p-6 my-2 mx-auto rounded-lg relative top-16 text-sm lg:flex-col">
-            <p class="pl-8">Do you have a project or idea? Our team will help you as soon as possible.</p>
-            <router-link to="/register" class="btn p-3 rounded-lg bg-blue-800 text-white text-center my-4 mx-auto lg:w-6/12">Contact Our Team</router-link>
+            <p class="pl-8 sm:pl-2">Do you have a project or idea? Our team will help you as soon as possible.</p>
+            <router-link to="/register" class="btn p-3 rounded-lg bg-blue-800 text-white text-center my-4 mx-auto lg:w-6/12 sm:w-full">Contact Our Team</router-link>
         </div>
     </div>
   </div>
