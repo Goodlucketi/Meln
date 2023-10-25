@@ -6,19 +6,19 @@
           Transforming <span class="text-cyan-400"> Businesses </span>through
           <span class="text-cyan-400"> Innovative </span> ICT Solutions
         </h3>
-        <p class="text-xl font-light w-8/12 my-2 mx-auto p-2 md:w-full md:text-sm">
+        <p class="text-xl font-light w-8/12 my-3 mx-auto p-3 md:w-full md:text-sm">
           At Meln Hub, we believe in the power of technology to shape a better
           world. We are dedicated to providing cutting-edge solutions that
           empower businesses, drive digital transformation, and unlock new
           opportunities.
         </p>
         <div class="btns mt-10 mx-auto mb-10 md:mt-2">
-          <router-link class="btn text-slate-700 bg-slate-100 py-3 px-10 mx-5 my-10 rounded-xl lg:block lg:my-2" to="/contact">Get Started</router-link>
-          <router-link class="btn text-cyan-400 py-3 px-10 mx-5 my-10 rounded-xl border border-cyan-400 lg:block lg:my-2" to="/contact">Learn More</router-link>
+          <router-link class="btn text-slate-700 bg-slate-100 py-3 px-10 mx-5 my-10 rounded-xl lg:block lg:my-3 md:my-5" to="/contact">Get Started</router-link>
+          <router-link class="btn text-cyan-400 py-3 px-10 mx-5 my-10 rounded-xl border border-cyan-400 lg:block lg:my-3 md:my-5" to="/contact">Learn More</router-link>
         </div>
       </div>
-      <div class="features flex gap-2 justify-between items-center absolute -bottom-32 text-sm lg:flex-col l:relative lg:top-full md:-bottom-96">
-        <div class="flex items-center p-3 rounded-xl text-left gap-3 bg-slate-800 text-white lg:flex-col lg:text-center ideate">
+      <div class="features flex gap-2 justify-between items-center absolute lg:flex-col">
+        <div class="flex items-center p-3 rounded-xl text-left gap-3 bg-slate-800 text-white lg:flex-col lg:text-center lg:w-full ideate">
           <div class="icon rounded-full bg-white p-2 w-3/12 md:w-1/12">
             <img src="../../assets/files/icons/python.svg" alt="ideate-icon" class="mx-auto">
           </div>
