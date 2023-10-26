@@ -17,8 +17,8 @@
           <router-link class="btn text-cyan-400 py-3 px-10 mx-5 my-10 rounded-xl border border-cyan-400 lg:block lg:my-3 md:my-5" to="/contact">Learn More</router-link>
         </div>
       </div>
-      <div class="features flex gap-2 justify-between items-center absolute lg:flex-col">
-        <div class="flex items-center p-3 rounded-xl text-left gap-3 bg-slate-800 text-white lg:flex-col lg:text-center lg:w-full ideate">
+      <div class="features flex gap-2 justify-between items-center absolute -bottom-40 lg:flex-col lg:relative lg:bottom-0">
+        <div class="flex items-center p-5 rounded-xl text-left gap-3 bg-slate-800 text-white lg:flex-col lg:text-center lg:w-full lg:p-2 ideate">
           <div class="icon rounded-full bg-white p-2 w-3/12 md:w-1/12">
             <img src="../../assets/files/icons/python.svg" alt="ideate-icon" class="mx-auto">
           </div>
@@ -27,7 +27,7 @@
             <p class="text-xs">Embrace the power of ideation to fuel your digital transformation journey and revolutionize your business</p>
           </div>
         </div>
-        <div class="flex items-center p-3 rounded-xl text-left gap-3 bg-blue-800 text-white lg:flex-col lg:text-center collaborate">
+        <div class="flex items-center p-5 rounded-xl text-left gap-3 bg-blue-800 text-white lg:flex-col lg:text-center lg:w-full lg:p-2 collaborate">
           <div class="icon rounded-full bg-white p-2 w-3/12 md:w-1/12">
             <img src="../../assets/files/icons/colorfilter.svg" alt="collaborate-icon" class="mx-auto">
           </div>
@@ -36,7 +36,7 @@
             <p class="text-xs">"Experience the transformative impact of collaboration, where diverse perspectives converge to create solutions that surpass expectations."</p>
           </div>
         </div>
-        <div class="flex items-center p-4 rounded-xl text-left gap-3 bg-cyan-500 text-black lg:flex-col lg:text-center build">
+        <div class="flex items-center p-5 rounded-xl text-left gap-3 bg-cyan-500 text-black lg:flex-col lg:text-center lg:w-full lg:p-2 build">
           <div class="icon rounded-full bg-white p-2 w-3/12 md:w-1/12">
             <img src="../../assets/files/icons/building3.svg" alt="build-icon" class="mx-auto">
           </div>
