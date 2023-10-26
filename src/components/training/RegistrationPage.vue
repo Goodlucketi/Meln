@@ -39,9 +39,19 @@
 
           <div class="p-2 border-b mb-3 relative ">
             <font-awesome-icon class="icon absolute" icon="fa-solid fa-book" />
-            <input type="text" name="course" id="course" placeholder="Course:"  class="block w-11/12 mx-auto outline-0 pl-4" v-model="courseSelect" disabled/>
+            <select name="course" id="course" class="block w-11/12 mx-auto outline-0" v-model="formData.course" required>
+              <option value="null" class="p-2 outline-0">--Select Course--</option>
+              <option value="DataProcessing" class="p-2 outline-0">Data Processing</option>
+              <option value="WebDevelopment" class="p-2 outline-0">Web Development</option>
+              <option value="SoftwareDevelopment" class="p-2 outline-0">Software Development</option>
+              <option value="ProjectManagement" class="p-2 outline-0">Project Management</option>
+              <option value="GraphicsDesign" class="p-2 outline-0">Graphics Design</option>
+              <option value="UiUx" class="p-2 outline-0">UI / UX Design</option>
+              <option value="microsoft" class="p-2 outline-0">Microsoft Office Suite</option>
+              <option value="videoEditing" class="p-2 outline-0">Video Editing</option>
+            </select>
           </div>
-
+         
           <div class="p-2 mt-5 relative">
             <input type="submit" value="Enroll" class="block w-11/12 mx-auto bg-purple-700 text-white p-2 rounded-lg hover:bg-slate-400 transition-all duration-1000" >
           </div> 
@@ -61,7 +71,6 @@
 export default {
     data() {
     return {
-      courseSelect: this.$route.params.courseSelect,
       formData: {
         name: '',
         email:'',
@@ -69,7 +78,7 @@ export default {
         gender: '',
         dob: '',
         address: '',
-        course: this.courseSelect
+        course: ''
       },
     }
   },
