@@ -2,7 +2,7 @@
   <div class="blog p-4 bg-slate-100">
     <div class="blog-container w-11/12 my-4 mx-auto">
         <h3 class="blog-title text-4xl text-center font-bold p-4 md:text-3xl">Latest from Our Blog</h3>
-        <div v-for="article in responseData" :key="article.id" class="blog-posts grid grid-cols-3 justify-between items-center lg:flex-col">
+        <div v-for="article in responseData" :key="article.id" class="blog-posts grid grid-cols-3 justify-between items-center lg:grid-cols-1">
             <div class="post p-2">
                 <img :src="article.urlToImage" alt="blog-image" class="blog-img shadow-xl mb-8">
                 <div class="blog-content">
@@ -11,7 +11,8 @@
                         {{ article.title }}
                     </h4>
                     <p class="blog-post-text my-2 auto">
-                        {{article.content}}                    </p>
+                        {{article.content}}                    
+                    </p>
                     <a :href="article.url" target="_blank" class="action flex items-center text-blue-700 text-sm"><span>Read More</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></a>
                 </div>
             </div>
