@@ -13,7 +13,7 @@
                     <p class="blog-post-text my-2 auto">
                         {{result.description}}                    
                     </p>
-                    <a :href="result.url" target="_blank" class="action flex items-center text-blue-700 text-sm"><span>Read More</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></a>
+                    <a :href="result.link" target="_blank" class="action flex items-center text-blue-700 text-sm"><span>Read More</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></a>
                 </div>
             </div>
         </div>
