@@ -2,18 +2,18 @@
   <div class="blog p-4 bg-slate-100">
     <div class="blog-container w-11/12 my-4 mx-auto">
         <h3 class="blog-title text-4xl text-center font-bold p-4 md:text-3xl">Latest from Our Blog</h3>
-        <div v-for="article in responseData" :key="article.id" class="blog-posts grid grid-cols-3 justify-between items-center lg:grid-cols-1">
+        <div v-for="result in responseData" :key="result.id" class="blog-posts grid grid-cols-3 justify-between items-center lg:grid-cols-1">
             <div class="post p-2">
-                <img :src="article.urlToImage" alt="blog-image" class="blog-img shadow-xl mb-8">
+                <img :src="result.image_url" alt="blog-image" class="blog-img shadow-xl mb-8">
                 <div class="blog-content">
-                    <p class="my-2 auto text-sm">{{ article.publishedAt }}</p>
+                    <p class="my-2 auto text-sm">{{ result.pubDate }}</p>
                     <h4 class="blog-post-title my-2 auto text-blue-700 text-base">
-                        {{ article.title }}
+                        {{ result.title }}
                     </h4>
                     <p class="blog-post-text my-2 auto">
-                        {{article.content}}                    
+                        {{result.description}}                    
                     </p>
-                    <a :href="article.url" target="_blank" class="action flex items-center text-blue-700 text-sm"><span>Read More</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></a>
+                    <a :href="result.url" target="_blank" class="action flex items-center text-blue-700 text-sm"><span>Read More</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></a>
                 </div>
             </div>
         </div>
@@ -31,7 +31,7 @@ export default {
     },
     methods: {
         fetchData() {
-            const newsApi = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=cec99d2631724364a0c958c1a0df5333'
+            const newsApi = 'https://newsdata.io/api/1/news?apikey=pub_318639b8ad61d6ff61aa71f820d876444bef2&category=technology&language=en'
 
             fetch(newsApi, 
             {
@@ -51,8 +51,8 @@ export default {
             })
             .then((data) => {
                 console.log(data);
-                let dataObj = data.articles
-
+                let dataObj = data.results
+                console.log(dataObj);
                 this.responseData = dataObj; // Store the data in a Vue data property
             })
             .catch((error) => {
