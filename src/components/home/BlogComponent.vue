@@ -4,10 +4,10 @@
         <h3 class="blog-title text-4xl text-center font-bold p-4 md:text-3xl">Latest from Our Blog</h3>
         <div v-for="result in responseData" :key="result.id">
             
-                <div class="post p-2 w-3/12">
-                    <img :src="result.image_url" alt="blog-image" class="blog-img shadow-xl mb-8">
+                <div class="post p-2 shadow-lg my-10">
+                    <img :src="result.image_url" :alt="result.source_id" class="blog-img w-6/12 mx-auto mb-8 lg:w-full">
                     <div class="blog-content">
-                        <p class="my-2 auto text-sm">{{ result.pubDate }}</p>
+                        <p class="my-2 auto text-sm">Published: {{ result.pubDate }}</p>
                         <h4 class="blog-post-title my-2 auto text-blue-700 text-base">
                             {{ result.title }}
                         </h4>
