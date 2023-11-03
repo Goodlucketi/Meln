@@ -9,7 +9,7 @@
           <p class="service-content leading-loose text-md">
             We develop robust, scalable, and customized software solutions that align with your business objectives. From web and mobile applications to enterprise software, we have you covered.
           </p>
-          <router-link to="/register" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/training" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
 
         <div class="service p-5 shadow-xl p-2 rounded-lg flex flex-col justify-between bg-white transition-all duration-500 hover:scale-105 ">
@@ -18,7 +18,7 @@
           <p class="service-content leading-loose text-md">
             Embrace the digital age with our transformative solutions. We help businesses streamline processes, enhance customer experiences, and unlock new growth opportunities through digitalization.
           </p>
-          <router-link to="/register" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/training" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
 
         <div class="service p-5 shadow-xl p-2 rounded-lg flex flex-col justify-between bg-white transition-all duration-500 hover:scale-105 ">
@@ -27,7 +27,7 @@
           <p class="service-content leading-loose text-md">
             Our experienced consultants provide strategic guidance, technology assessments, and roadmap development to help you navigate the complex IT landscape and make informed technology decisions.
           </p>
-          <router-link to="/register" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/training" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
 
         <div class="service p-5 shadow-xl p-2 rounded-lg flex flex-col justify-between bg-white transition-all duration-500 hover:scale-105 ">
@@ -36,7 +36,7 @@
           <p class="service-content leading-loose text-md">
             We develop robust, scalable, and customized software solutions that align with your business objectives. From web and mobile applications to enterprise software, we have you covered.
           </p>
-          <router-link to="/register" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/training" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
 
         <div class="service p-5 shadow-xl p-2 rounded-lg flex flex-col justify-between bg-white transition-all duration-500 hover:scale-105 ">
@@ -45,7 +45,7 @@
           <p class="service-content leading-loose text-md">
             Embrace the digital age with our transformative solutions. We help businesses streamline processes, enhance customer experiences, and unlock new growth opportunities through digitalization.
           </p>
-          <router-link to="/register" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/training" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
 
         <div class="service p-5 shadow-xl p-2 rounded-lg flex flex-col justify-between bg-white transition-all duration-500 hover:scale-105 ">
@@ -54,7 +54,7 @@
           <p class="service-content leading-loose text-md">
             Our experienced consultants provide strategic guidance, technology assessments, and roadmap development to help you navigate the complex IT landscape and make informed technology decisions.
           </p>
-          <router-link to="/register" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
+          <router-link to="/training" class="action my-2 flex gap-5 items-center text-slate-800 transition-all duration-500 hover:bg-white hover:border-slate-800"><span>{{ action }}</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></router-link>
         </div>
         
       </div>

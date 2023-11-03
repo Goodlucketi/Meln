@@ -6,7 +6,7 @@
         <p class="text-md my-4 mx-auto">
           Use marketing automation to identify hot leads and email your sales team telling them to follow up. Nurture and contact leads at the opportune time to maximize.
         </p>
-        <router-link class="btn bg-blue-700 text-white px-5 py-2 absolute -bottom-16 rounded-xl text-center lg:w-full" to="/register">Get Started Now</router-link>
+        <router-link class="btn bg-blue-700 text-white px-5 py-2 absolute -bottom-16 rounded-xl text-center lg:w-full" to="/training">Get Started Now</router-link>
       </div>
       <div class="adImage w-6/12 relative lg:w-full">
         <img src="../../assets/files/images/digital-service2.png" alt="Learn Web Image" />
