@@ -2,20 +2,22 @@
   <div class="blog p-4 bg-slate-100">
     <div class="blog-container w-11/12 my-4 mx-auto">
         <h3 class="blog-title text-4xl text-center font-bold p-4 md:text-3xl">Latest from Our Blog</h3>
-        <div v-for="result in responseData" :key="result.id" class="blog-posts grid grid-cols-3 justify-between items-center lg:grid-cols-1">
-            <div class="post p-2">
-                <img :src="result.image_url" alt="blog-image" class="blog-img shadow-xl mb-8">
-                <div class="blog-content">
-                    <p class="my-2 auto text-sm">{{ result.pubDate }}</p>
-                    <h4 class="blog-post-title my-2 auto text-blue-700 text-base">
-                        {{ result.title }}
-                    </h4>
-                    <p class="blog-post-text my-2 auto">
-                        {{result.description}}                    
-                    </p>
-                    <a :href="result.link" target="_blank" class="action flex items-center text-blue-700 text-sm"><span>Read More</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></a>
+        <div v-for="result in responseData" :key="result.id">
+            
+                <div class="post p-2 w-3/12">
+                    <img :src="result.image_url" alt="blog-image" class="blog-img shadow-xl mb-8">
+                    <div class="blog-content">
+                        <p class="my-2 auto text-sm">{{ result.pubDate }}</p>
+                        <h4 class="blog-post-title my-2 auto text-blue-700 text-base">
+                            {{ result.title }}
+                        </h4>
+                        <p class="blog-post-text my-2 auto">
+                            {{result.description}}                    
+                        </p>
+                        <a :href="result.link" target="_blank" class="action flex items-center text-blue-700 text-sm"><span>Read More</span><font-awesome-icon class="icon" icon = "fa-solid fa-arrow-right" /></a>
+                    </div>
                 </div>
-            </div>
+            
         </div>
     </div>
   </div>

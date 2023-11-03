@@ -1,12 +1,12 @@
 <script setup>
-import TemporaryComponent from '../components/TemporaryComponent.vue'
+import TrainingProject from '../components/projects/TrainingProject.vue'
 import ContactUs from '../components/home/ContactUs.vue'
 import FooterComponent from '../components/home/FooterComponent.vue'
 </script>
 
 <template>
   <main>
-    <TemporaryComponent />
+    <TrainingProject />
     <ContactUs />
     <FooterComponent />
   </main>
