@@ -65,13 +65,14 @@
       </div>
     </div>
   </div>
-  <div v-if="success" class="success my-8 p-5 text-center absolute top-0 h-screen bg-gray-950/95 w-screen flex justify-center items-center text-white">
+  <div v-if="success" class="success my-8 p-5  absolute top-0 h-screen bg-gray-950/95 w-screen flex justify-center items-center text-white">
+    <font-awesome-icon class="icon mx-1 p-2 text-white absolute top-10 right-10 text-3xl sm:top-2 sm:right-2 " icon="fa-solid fa-xmark" @click="closeSuccessBtn"/>
     <div class="success-con border-2 p-12 rounded-xl">
-      <h2 class="font-bold text-2xl p-4 bg-green-500 rounded-xl text-white">Registration Success</h2>
-      <p class="p-2 my-2"><strong class="font-bold">Student Name: </strong> {{ studentName }}</p>
-      <p class="p-2 my-2"><strong class="font-bold">Student Course: </strong> {{ stdCourse }}</p>
-      <p class="p-2 mb-9"><strong class="font-bold">Student ID Number: </strong>{{ stdId }}</p>
-      <a href="http://" class="p-4 bg-purple-800 rounded-xl text-white"> Click to Join Our Whatsapp Community</a>
+      <h2 class="font-bold text-2xl p-4 bg-green-500 rounded-xl text-white text-center md:mb-5 md:text-xl md:p-2">Registration Success</h2>
+      <p class="p-2 my-2 md:my-0 md:p-1"><strong class="font-bold">Student Name: </strong> {{ studentName }}</p>
+      <p class="p-2 my-2 md:my-0 md:p-1"><strong class="font-bold">Student Course: </strong> {{ stdCourse }}</p>
+      <p class="p-2 mb-9 md:mb-5"><strong class="font-bold">Student ID Number: </strong>{{ stdId }}</p>
+      <a href="https://chat.whatsapp.com/Ke8EcoUXVSB3LzsEfh4D8r" class="p-4 bg-purple-800 rounded-xl text-center text-white md:block md:p-2"> Click to Join Our Whatsapp Community</a>
     </div>
   </div>
 </template>
@@ -95,7 +96,6 @@ export default {
       stdId:'',
       stdCourse:'',
       success: false,
-
     }
   },
   computed: {
@@ -170,7 +170,9 @@ export default {
       })
     },
 
-  
+    closeSuccessBtn(){
+      this.success = false
+    }
   },
 }
 </script>

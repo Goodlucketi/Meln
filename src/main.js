@@ -34,6 +34,7 @@ import { faCircleChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faPersonHalfDress } from "@fortawesome/free-solid-svg-icons";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 /* add icons to the library */
 library.add(
@@ -59,7 +60,8 @@ library.add(
   faBook,
   faUser,
   faPersonHalfDress,
-  faCalendarDays
+  faCalendarDays,
+  faXmark
 
 );
 
