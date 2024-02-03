@@ -39,10 +39,10 @@
 
           <div class="p-2 border-b mb-3 relative ">
             <font-awesome-icon class="icon absolute" icon="fa-solid fa-book" />
-            <select name="course" id="course" class="block w-11/12 mx-auto outline-0" v-model="formData.course" required>
+            <select name="course" id="course" class="block w-11/12 mx-auto outline-0" v-model="formData.course" required @change="studentID">
               <option value="null" class="p-2 outline-0">--Select Course--</option>
-              <option value="DataProcessing" class="p-2 outline-0">Data Processing</option>
               <option value="WebDevelopment" class="p-2 outline-0">Web Development</option>
+              <option value="DataAnalysis" class="p-2 outline-0">Data Analysis</option>
               <option value="SoftwareDevelopment" class="p-2 outline-0">Software Development</option>
               <option value="ProjectManagement" class="p-2 outline-0">Project Management</option>
               <option value="GraphicsDesign" class="p-2 outline-0">Graphics Design</option>
@@ -78,15 +78,80 @@ export default {
         gender: '',
         dob: '',
         address: '',
-        course: ''
+        course: '',
+        regId: '',
       },
     }
   },
+  computed: {
+    studentID(){
+      console.log(this.formData.course);
+      let studentCourse=this.formData.course
+      let studentId = ""
+      switch (studentCourse) {
+        case "SoftwareDevelopment":
+          studentId="MEL/24/SW/0"+Math.ceil(Math.random(0, 100)*99+1)
+          // console.log(studentId);
+          break;
+        case "WebDevelopment":
+          studentId="MEL/24/WB/0"+Math.ceil(Math.random(0, 100)*99+1)
+          // console.log(studentId);
+        break;
+        case "GraphicsDesign":
+          studentId="MEL/24/GR/0"+Math.ceil(Math.random(0, 100)*99+1)
+          // console.log(studentId);
+          break;
+        case "ProjectManagement":
+          studentId="MEL/24/PM/0"+Math.ceil(Math.random(0, 100)*99+1)
+          // console.log(studentId);
+          break;
+        case "microsoft":
+          studentId="MEL/24/MS/0"+Math.ceil(Math.random(0, 100)*99+1)
+          // console.log(studentId);
+          break;
+        case "UiUx":
+          studentId="MEL/24/UX/0"+Math.ceil(Math.random(0, 100)*99+1)
+          // console.log(studentId);
+          break;
+        case "videoEditing":
+          studentId="MEL/24/VD/0"+Math.ceil(Math.random(0, 100)*99+1)
+          // console.log(studentId);
+          break;
+        case "DataAnalysis":
+          studentId="MEL/24/DA/0"+Math.ceil(Math.random(0, 100)*99+1)
+          // console.log(studentId);
+          break;
+        
+        default:
+          break;
+      }
+      return studentId;
+    }
+  },
+
   methods: {
     onRegister(){
+      this.formData.regId = this.studentID
       console.log(this.formData);
-      alert ("Registration Successful")
-    }
+
+      fetch('http://localhost/melnApi/api/create.php',{
+        method: 'POST',
+        mode: 'cors',
+        headers: {
+          Accept:'application/json, text/plain, */*',
+          'Content-Type':'application/json',
+        },
+        body: JSON.stringify(this.formData)
+      }).then((response)=>{
+        return response.json()
+      }).then((result)=>{
+          alert(result.name + " Registered Successfully \n"+ "Your Registration ID is " + result.stdId);
+      }).catch((e)=>{
+        console.log(e);
+      })
+    },
+
+  
   },
 }
 </script>

@@ -15,7 +15,7 @@ import FooterComponent from '../components/home/FooterComponent.vue'
     <AboutHome />
     <ServiceComponent :heading="head" :action="link"/>
     <AdComponent />
-    <MeetTeam />
+    <!-- <MeetTeam /> -->
     <!-- <BlogComponent /> -->
     <ContactUs />
     <FooterComponent />
