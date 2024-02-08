@@ -50,7 +50,7 @@ export default {
     methods: {
         onSubmit(){
             console.log(this.formData);
-            alert("Your request has been submitted!!!")
+            alert("Your message has been submitted!!!")
         }
     },
 }

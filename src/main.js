@@ -35,11 +35,14 @@ import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faPersonHalfDress } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faLaptop } from '@fortawesome/free-solid-svg-icons';
+import { faSlash } from '@fortawesome/free-solid-svg-icons';
+
 
 /* add icons to the library */
 library.add(
-    faUserSecret,
-    faCode,
+  faUserSecret,
+  faCode,
   faPaintBrush,
   faLineChart,
   faGraduationCap,
@@ -61,7 +64,9 @@ library.add(
   faUser,
   faPersonHalfDress,
   faCalendarDays,
-  faXmark
+  faXmark,
+  faLaptop,
+  faSlash
 
 );
 

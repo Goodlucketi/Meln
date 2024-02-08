@@ -12,3 +12,7 @@
     font-weight: 300;
     box-sizing: border-box;
   }
+
+  input[type='radio']:checked+label{
+    background:rgb(3, 169, 8);
+  }

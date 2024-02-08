@@ -51,7 +51,17 @@
               <option value="videoEditing" class="p-2 outline-0">Video Editing</option>
             </select>
           </div>
-         
+         <div class="p-3 border-b mb-3 relative">
+          <p class="my-2">Do you have a PC</p>
+          <input type="radio" name="laptop" id="yesPc" value="true" class="hidden">
+          <label for="yesPc" class="mr-10 p-2 rounded shadow-md"><font-awesome-icon icon="fa-solid fa-laptop" class="icon"></font-awesome-icon></label>
+
+          <input type="radio" name="laptop" id="noPc" value="false" class="hidden">
+          <label for="noPc"  class="mr-10 p-2 rounded relative shadow-md">
+            <font-awesome-icon icon=" fa-solid fa-laptop"></font-awesome-icon>
+            <font-awesome-icon icon=" fa-solid fa-slash" class="absolute left-2 top-2"></font-awesome-icon>
+          </label>
+         </div>
           <div class="p-2 mt-5 relative">
             <input type="submit" value="Enroll" class="block w-11/12 mx-auto bg-purple-700 text-white p-2 rounded-lg hover:bg-slate-400 transition-all duration-1000" >
           </div> 
@@ -64,17 +74,18 @@
         </div>
       </div>
     </div>
-  </div>
-  <div v-if="success" class="success my-8 p-5  absolute top-0 h-screen bg-gray-950/95 w-screen flex justify-center items-center text-white">
-    <font-awesome-icon class="icon mx-1 p-2 text-white absolute top-10 right-10 text-3xl sm:top-2 sm:right-2 " icon="fa-solid fa-xmark" @click="closeSuccessBtn"/>
-    <div class="success-con border-2 p-12 rounded-xl">
-      <h2 class="font-bold text-2xl p-4 bg-green-500 rounded-xl text-white text-center md:mb-5 md:text-xl md:p-2">Registration Success</h2>
-      <p class="p-2 my-2 md:my-0 md:p-1"><strong class="font-bold">Student Name: </strong> {{ studentName }}</p>
-      <p class="p-2 my-2 md:my-0 md:p-1"><strong class="font-bold">Student Course: </strong> {{ stdCourse }}</p>
-      <p class="p-2 mb-9 md:mb-5"><strong class="font-bold">Student ID Number: </strong>{{ stdId }}</p>
-      <a href="https://chat.whatsapp.com/Ke8EcoUXVSB3LzsEfh4D8r" class="p-4 bg-purple-800 rounded-xl text-center text-white md:block md:p-2"> Click to Join Our Whatsapp Community</a>
+    <div v-if="success" class="success my-8 p-5  absolute top-0 h-screen bg-gray-950/95 w-screen flex justify-center items-center text-white">
+      <font-awesome-icon class="icon mx-1 p-2 text-white absolute top-10 right-10 text-3xl sm:top-2 sm:right-2 " icon="fa-solid fa-xmark" @click="closeSuccessBtn"/>
+      <div class="success-con border-2 p-12 rounded-xl">
+        <h2 class="font-bold text-2xl p-4 bg-green-500 rounded-xl text-white text-center md:mb-5 md:text-xl md:p-2">Registration Success</h2>
+        <p class="p-2 my-2 md:my-0 md:p-1"><strong class="font-bold">Student Name: </strong> {{ studentName }}</p>
+        <p class="p-2 my-2 md:my-0 md:p-1"><strong class="font-bold">Student Course: </strong> {{ stdCourse }}</p>
+        <p class="p-2 mb-9 md:mb-5"><strong class="font-bold">Student ID Number: </strong>{{ stdId }}</p>
+        <a href="https://chat.whatsapp.com/Ke8EcoUXVSB3LzsEfh4D8r" class="p-4 bg-purple-800 rounded-xl text-center text-white md:block md:p-2"> Click to Join Our Whatsapp Community</a>
+      </div>
     </div>
   </div>
+  
 </template>
 
 <script>
@@ -147,7 +158,6 @@ export default {
   methods: {
     onRegister(){
       this.formData.regId = this.studentID
-      console.log(this.formData);
 
       fetch('http://localhost/melnApi/api/create.php',{
         method: 'POST',
