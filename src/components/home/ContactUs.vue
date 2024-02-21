@@ -50,7 +50,21 @@ export default {
     methods: {
         onSubmit(){
             console.log(this.formData);
-            alert("Your message has been submitted!!!")
+            fetch('http://localhost/melnApi/mail/mail.php', {
+                method: 'POST',
+                mode: 'cors',
+                headers: {
+                    Accept: 'application/json, text/plain, */*',
+                    'Content-Type':'application/json',
+                },
+                body: JSON.stringify(this.formData)
+            }).then((response)=>{
+                return response.json()
+            }).then((result)=>{
+                console.log(result.message);
+            }).catch((e)=>{
+                console.log(e);
+            })
         }
     },
 }

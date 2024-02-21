@@ -39,6 +39,7 @@
 
           <div class="p-2 border-b mb-3 relative ">
             <font-awesome-icon class="icon absolute" icon="fa-solid fa-book" />
+            <label class="px-8" for="course">Select Course</label>
             <select name="course" id="course" class="block w-11/12 mx-auto outline-0" v-model="formData.course" required @change="studentID">
               <option value="null" class="p-2 outline-0">--Select Course--</option>
               <option value="WebDevelopment" class="p-2 outline-0">Web Development</option>
@@ -81,7 +82,8 @@
         <p class="p-2 my-2 md:my-0 md:p-1"><strong class="font-bold">Student Name: </strong> {{ studentName }}</p>
         <p class="p-2 my-2 md:my-0 md:p-1"><strong class="font-bold">Student Course: </strong> {{ stdCourse }}</p>
         <p class="p-2 mb-9 md:mb-5"><strong class="font-bold">Student ID Number: </strong>{{ stdId }}</p>
-        <a href="https://chat.whatsapp.com/Ke8EcoUXVSB3LzsEfh4D8r" class="p-4 bg-purple-800 rounded-xl text-center text-white md:block md:p-2"> Click to Join Our Whatsapp Community</a>
+        <a :href="whatsappLink"  class="p-4 bg-purple-800 rounded-xl text-center text-white md:block md:p-2" target="_blank"> Click to Join Our Whatsapp Community</a>
+        <p class="p-2 my-5 font-mono">* Please Take Note of your Student ID Number *</p>
       </div>
     </div>
   </div>
@@ -107,6 +109,7 @@ export default {
       stdId:'',
       stdCourse:'',
       success: false,
+      whatsappLink: 'https://chat.whatsapp.com/Ke8EcoUXVSB3LzsEfh4D8r'
     }
   },
   computed: {

@@ -43,8 +43,8 @@ const router = createRouter({
       component: TrainingView
     },
     {
-      path: '/registration',
-      name: 'registration',
+      path: '/register',
+      name: 'register',
       component: RegistrationView
     }
   ]
