@@ -91,9 +91,14 @@
 </template>
 
 <script>
+import { db } from '@/Auth/auth.js';
+import { collection, addDoc } from 'firebase/firestore';
+
+const colRef = collection(db, 'Users')
 export default {
     data() {
     return {
+
       formData: {
         name: '',
         email:'',
@@ -113,74 +118,70 @@ export default {
     }
   },
   computed: {
-    studentID(){
-      console.log(this.formData.course);
-      let studentCourse=this.formData.course
-      let studentId = ""
-      switch (studentCourse) {
-        case "SoftwareDevelopment":
-          studentId="MEL/24/SW/0"+Math.ceil(Math.random(0, 100)*99+1)
-          // console.log(studentId);
-          break;
-        case "WebDevelopment":
-          studentId="MEL/24/WB/0"+Math.ceil(Math.random(0, 100)*99+1)
-          // console.log(studentId);
-        break;
-        case "GraphicsDesign":
-          studentId="MEL/24/GR/0"+Math.ceil(Math.random(0, 100)*99+1)
-          // console.log(studentId);
-          break;
-        case "ProjectManagement":
-          studentId="MEL/24/PM/0"+Math.ceil(Math.random(0, 100)*99+1)
-          // console.log(studentId);
-          break;
-        case "microsoft":
-          studentId="MEL/24/MS/0"+Math.ceil(Math.random(0, 100)*99+1)
-          // console.log(studentId);
-          break;
-        case "UiUx":
-          studentId="MEL/24/UX/0"+Math.ceil(Math.random(0, 100)*99+1)
-          // console.log(studentId);
-          break;
-        case "videoEditing":
-          studentId="MEL/24/VD/0"+Math.ceil(Math.random(0, 100)*99+1)
-          // console.log(studentId);
-          break;
-        case "DataAnalysis":
-          studentId="MEL/24/DA/0"+Math.ceil(Math.random(0, 100)*99+1)
-          // console.log(studentId);
-          break;
+    // studentID(){
+    //   console.log(this.formData.course);
+    //   let studentCourse=this.formData.course
+    //   let studentId = ""
+    //   switch (studentCourse) {
+    //     case "SoftwareDevelopment":
+    //       studentId="MEL/24/SW/0"+Math.ceil(Math.random(0, 100)*99+1)
+    //       // console.log(studentId);
+    //       break;
+    //     case "WebDevelopment":
+    //       studentId="MEL/24/WB/0"+Math.ceil(Math.random(0, 100)*99+1)
+    //       // console.log(studentId);
+    //     break;
+    //     case "GraphicsDesign":
+    //       studentId="MEL/24/GR/0"+Math.ceil(Math.random(0, 100)*99+1)
+    //       // console.log(studentId);
+    //       break;
+    //     case "ProjectManagement":
+    //       studentId="MEL/24/PM/0"+Math.ceil(Math.random(0, 100)*99+1)
+    //       // console.log(studentId);
+    //       break;
+    //     case "microsoft":
+    //       studentId="MEL/24/MS/0"+Math.ceil(Math.random(0, 100)*99+1)
+    //       // console.log(studentId);
+    //       break;
+    //     case "UiUx":
+    //       studentId="MEL/24/UX/0"+Math.ceil(Math.random(0, 100)*99+1)
+    //       // console.log(studentId);
+    //       break;
+    //     case "videoEditing":
+    //       studentId="MEL/24/VD/0"+Math.ceil(Math.random(0, 100)*99+1)
+    //       // console.log(studentId);
+    //       break;
+    //     case "DataAnalysis":
+    //       studentId="MEL/24/DA/0"+Math.ceil(Math.random(0, 100)*99+1)
+    //       // console.log(studentId);
+    //       break;
         
-        default:
-          break;
-      }
-      return studentId;
-    }
+    //     default:
+    //       break;
+    //   }
+    //   return studentId;
+    // }
   },
 
   methods: {
-    onRegister(){
-      this.formData.regId = this.studentID
+    async onRegister(){
+      // this.formData.regId = this.studentID
+      try {
+          const regStudents = await addDoc(colRef, {
+          Name: this.formData.name,
+          Email:this.formData.email,
+          Phone: this.formData.phone,
+          Gender: this.formData.gender,
+          DOB: this.formData.dob,
+          Address: this.formData.address,
+          Course: this.formData.course,
+          // RegId: this.formData.regId,
+        })
+        console.log('Document Added ', regStudents.id);
 
-      fetch('http://localhost/melnApi/api/create.php',{
-        method: 'POST',
-        mode: 'cors',
-        headers: {
-          Accept:'application/json, text/plain, */*',
-          'Content-Type':'application/json',
-        },
-        body: JSON.stringify(this.formData)
-      }).then((response)=>{
-        return response.json()
-      }).then((result)=>{
-          this.studentName = result.name 
-          this.stdId = result.stdId
-          this.stdCourse = result.stdCourse
-          this.success = true;
-
-      }).catch((e)=>{
-        console.log(e);
-      })
+      } catch(e){
+        console.error('Error Adding Doc: ', e);
+      }
     },
 
     closeSuccessBtn(){
